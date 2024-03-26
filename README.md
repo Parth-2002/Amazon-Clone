@@ -6,4 +6,3 @@ Amazon clone is web clone with same look and feel of original Amazon web page.
 2. CSS : Cascading Style Sheets (CSS) used for presentation and styling of web as "style.css" is used.
 
 # Screenshots :
-![alt text](image.png)
