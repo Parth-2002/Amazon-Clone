@@ -1,3 +1,5 @@
+/* 3rem --> 50px */
+
 * {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -8,7 +10,7 @@ i {
     opacity: 0.9;
 }
 .navBar {
-    height: 60px;
+    height: 4rem;
     background-color: #0f1111;
     color: white;
     display: flex;
@@ -17,15 +19,15 @@ i {
 }
 
 .nav-logo {
-    height: 50px;
-    width: 100px;
-    margin: 3px;
+    height: 3rem;
+    width: 6rem;
+    margin: 0.5rem;
 }
 
 .logo {
     background-image: url("assets/amazon_logo.png");
     background-size: cover;
-    height: 50px;
+    height: 3rem;
     width: 100%;
 }
 .border {
@@ -34,14 +36,14 @@ i {
 
 .border:hover {
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 0.3rem;
 }
 
 .add-first {
     color: #cccccc;
     font-size: 0.8rem;
-    padding-top: 3px;
-    margin-left: 15px;
+    padding-top: 0.18rem;
+    margin-left: 0.9rem;
 }
 .add-icon {
     display: flex;
@@ -49,29 +51,41 @@ i {
 }
 .add-sec {
     font-size: 1rem;
-    margin-left: 3px;
+    margin-left: 0.06rem;
 }
 .nav-address {
-    height: 50px;
-    width: 80px;
+    height: 3rem;
+    width: 4.8rem;
     border: border-box;
     margin-top: 4px;
-    padding-left: 7px;
+    padding-left: 0.42rem;
+}
+@media screen and (max-width: 746px) {
+    .nav-address {
+        width: 0.01rem;
+        color: #0f1111;
+        overflow: auto;
+    }
 }
 
 .nav-search {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 36px;
-    width: 806px;
-    margin-left: 10px;
-    border-radius: 5px;
+    height: 2.2rem;
+    width: 48.4rem;
+    margin-left: 0.6rem;
+    border-radius: 0.3rem;
     background-color: white;
+}
+@media screen and (max-width: 1250px) {
+    .nav-search {
+        width: 30rem;
+    }
 }
 
 .nav-search:hover {
-    border: 3px solid orange;
+    border: 0.18rem solid orange;
     outline: none;
 }
 .search-input:focus{
@@ -81,45 +95,45 @@ i {
 .search-select {
     background-color: #f3f3f3;
     color: #0f1111;
-    height: 39px;
-    width: 50px;
-    padding: 0px 0px 3px 3px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    height: 2.34rem;
+    width: 3rem;
+    padding: 0px 0px 0.18rem 0.18rem;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
     text-align: center;
     border: none;
 }
 .search-input {
-    width: 711px;
-    height: 35px;
+    width: 42.7rem;
+    height: 2.1rem;
     border: 1px solid white;
 }
 .search-icon {
-    width: 45px;
-    height: 40px;
+    width: 2.7rem;
+    height: 2.4rem;
     color: #0f1111;
     display: flex;
     font-size: 1.4rem;
     background-color: orange;
     border: 1px solid orange;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
     justify-content: center;
     align-items: center;
 }
 
 .nav-lang {
     display: flex;
-    height: 50px;
-    width: 72px;
+    height: 3rem;
+    width: 4.3rem;
     justify-content: center;
     align-items: center;
 }
 .flag {
     background-image: url("assets/usa.webp");
     background-size: cover;
-    width: 21px;
-    height: 16px;
+    width: 1.26rem;
+    height: 0.96rem;
 }
 .lang {
     padding-left: 2px;
@@ -127,7 +141,7 @@ i {
 }
 
 .nav-signin {
-    padding: 8px;
+    padding: 0.5rem;
 }
 .account {
     display: flex;
@@ -138,19 +152,20 @@ i {
 .nav-second {
     font-size: 0.8rem;
     font-weight: 700;
-    padding-right: 3px;
+    padding-right: 0.18rem;
 }
 .nav-return {
-    padding: 8px;
+    padding: 0.5rem;
 }
 
 .nav-cart {
-    height: 50px;
-    width: 83px;
+    height: 3rem;
+    width: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .nav-cart i{
     font-size: 1.5rem;
     margin: 2px;
@@ -159,18 +174,48 @@ i {
     font-size: 0.9rem;
     font-weight: 700;
 }
+.ham-bar{
+    color: #0f1111;
+}
+@media screen and (max-width: 890px) {
+    .nav-search{
+        width: 25rem;
+    }
+}
+@media screen and (max-width: 890px) {
+    .ham-bar{
+        color: white;
+    }
+    .nav-signin ,.nav-return{
+        height: 0px;
+        width: 0px;
+        color: #0f1111;
+        overflow: auto;
+    }
+    .nav-cart p, .basket {
+        height: 0px;
+        width: 0px;
+        color: #0f1111;
+    }
+    .nav-signin:hover ,.nav-return:hover{
+        border: none;
+    }
 
+}
+
+
+/* panel */
 .panel {
-    height: 40px;
+    height: 2.6rem;
     color: white;
     background-color: rgb(39, 46, 59);
-    padding: 0px 10px;
+    padding: 0px 0.6rem;
     display: flex;
 }
 
 .panel-all {
-    height: 38px;
-    width: 60px;
+    height: 2.3rem;
+    width: 3.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,28 +223,27 @@ i {
     cursor: pointer;
 }
 .panel-all i {
-    padding: 5px;
+    padding: 0.3rem;
 }
 
 .panel-options {
-    height: 38px;
+    height: 2.6rem;
     width: 75%;
     display: flex;
     align-items: center;
     cursor: pointer;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
+    overflow: auto;
 }
 .panel-option {
     font-size: 0.9rem;
-    padding: 10px;
+    padding: 0.6rem;
     white-space: nowrap;
 }
 
 .panel-deal {
     display: flex;
     align-items: center;
-    padding: 3px 10px;
+    padding: 0.2rem 0.6rem;
     cursor: pointer;
     font-size: 1rem;
 }
@@ -211,25 +255,38 @@ i {
 .hero-section {
     background-image: url("assets/hero_image.jpg");
     background-size: cover;
-    height: 350px;
+    height: 21rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
+@media screen and (max-width: 684px) {
+    .hero-section {
+        width: 45rem;
+        background-size: contain;
+        height: 17.3rem;
+    }
+}
 
 .hero-msg {
     background-color: #f5f6f6;
     color: #0f1111;
-    height: 40px;
+    height: 2.4rem;
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
 }
+@media screen and (max-width: 985px) {
+    .hero-msg {
+        width: 100%;
+    }
+}
+
 .hero-msg p {
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 .hero-msg a {
     text-decoration:none;
@@ -246,28 +303,28 @@ i {
 
 .box {
     background-color: white;
-    height: 450px;
-    width: 350px;
-    margin-bottom: 20px;
+    height: 27rem;
+    width: 21rem;
+    margin-bottom: 1.2rem;
 }
 
 .box h2 {
     font-size: 1.4rem;
-    margin: 15px;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin: 1rem;
+    margin-top: 1.2rem;
+    margin-left: 1.2rem;
 }
 .box-img {
     background-size: cover;
-    height: 320px;
+    height: 19.2rem;
     width: 80%;
-    margin-left: 30px;
+    margin-left: 1.8rem;
 }
 .see-more {
-    height: 20px;
+    height: 1.2rem;
     width: 80%;
-    margin-left: 30px;
-    margin-top: 30px;
+    margin-left: 1.8rem;
+    margin-top: 1.8rem;
     cursor: pointer;
 }
 .see-more p {
@@ -277,15 +334,15 @@ i {
 }
 
 .item-container {
-    height: 320px;
+    height: 19.2rem;
     width: 80%;
-    margin-left: 30px;
-    margin-top: 30px;
+    margin-left: 1.8rem;
+    margin-top: 1.8rem;
 }
 .item-line {
-    height: 150px;
+    height: 9rem;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0.6rem;
     display: flex;
     justify-content: space-between;
 }
@@ -302,7 +359,7 @@ i {
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 700;
-    margin-top: 10px;
+    margin-top: 0.6rem;
     cursor: pointer;
 }
 .item a:checked{
@@ -314,7 +371,7 @@ i {
 /* Footer */
 
 .foot-back a {
-    height: 40px;
+    height: 2.4rem;
     width: 100%;
     display: flex;
     text-decoration: none;
@@ -327,7 +384,7 @@ i {
 }
 
 .footer-panel1{
-    height: 400px;
+    height: 24rem;
     width: 100%;
     background-color: #232f3e;
     color: white;
@@ -335,29 +392,37 @@ i {
     justify-content: space-evenly
 }
 .link-block {
-    height: 300px;
+    height: 18rem;
     width: 65%;
-    margin-top: 50px;
+    margin-top: 3rem;
     display: flex;
     justify-content: space-evenly;
+}
+@media screen and (max-width: 1105px) {
+    .link-block {
+        width: 100%;
+    }
+    .link-panel{
+        width: 20%;
+    }
 }
 .link-panel {
     cursor: pointer;
     width: 20%;
 }
 .link-panel h4 {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 .link {
     color: #c4c8cb;
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
 }
 .link:hover {
     text-decoration: underline;
 }
 
 .footer-panel2 {
-    height: 100px;
+    height: 6rem;
     width: 100%;
     background-color: #232f3e;
     display: flex;
@@ -373,55 +438,55 @@ hr {
     background-color: #5f61649c;
 }
 .foot-logo {
-    height: 50px;
-    width: 125px;
+    height: 3rem;
+    width: 7.5rem;
     background-image: url("assets/amazon_logo.png");
     background-size: cover;
-    margin-right: 50px;
+    margin-right: 3rem;
 }
 .footer-btn {
-    height: 50px;
-    width: 500px;
+    height: 3rem;
+    width: 30rem;
     display: flex;
     color: white;
     font-size: 0.9rem;
     font-weight: 100;
 }
 .foot-lang {
-    height: 20px;
+    height: 1.2rem;
     display: flex;
     padding: 5px;
     border: 1px solid rgba(246, 244, 244, 0.753);
-    border-radius: 4px;
-    margin: 10px;
+    border-radius: 0.3rem;
+    margin: 0.6rem;
 }
 .foot-lang p {
-    margin: 0px 5px;
+    margin: 0px 0.3rem;
 }
 .foot-dollar {
-    height: 20px;
+    height: 1.2rem;
     display: flex;
-    padding: 5px;
+    padding: 0.3rem;
     border: 1px solid rgba(246, 244, 244, 0.753);
-    border-radius: 4px;
-    margin: 10px;
+    border-radius: 0.3rem;
+    margin: 0.6rem;
 }
 .foot-dollar p{
-    margin: 0px 5px;
+    margin: 0px 0.3rem;
 }
 .foot-US {
-    height: 20px;
+    height: 1.2rem;
     display: flex;
-    padding: 5px;
+    padding: 0.3rem;
     border: 1px solid rgba(246, 244, 244, 0.753);
-    border-radius: 4px;
-    margin: 10px;
+    border-radius: 0.3rem;
+    margin: 0.6rem;
 }
 .foot-US .flag {
-    margin-right:  5px;
+    margin-right: 0.3rem;
 }
 .footer-panel3 {
-    height: 180px;
+    height: 10.8rem;
     width: 100%;
     background-color: #131a22;
     display: flex;
@@ -430,25 +495,31 @@ hr {
 }
 
 .foot-panel3-item {
-    height: 150px;
+    height: 9rem;
     width: 55%;
     color: rgba(255, 255, 255, 0.727);
     font-size: 0.8rem;
     font-weight: 25;
-    margin-top: 30px;
+    margin-top: 1.8rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+@media screen and (max-width: 1450px) {
+    .foot-panel3-item {
+        width: 80%;
+    }
+}
+
 .panel3-items {
-    width: 150px;
-    margin: 0px 30px;
+    width: 9rem;
+    margin: 0px 1.8rem;
 }
 .panel3-items h5{
     font-size: 0.8rem;
 }
 .footer-end {
-    height: 60px;
+    height: 3.6rem;
     width: 100%;
     background-color: #131a22;
     text-decoration: none;
@@ -462,18 +533,28 @@ hr {
     align-items: center;
 }
 .anchor p{
-    margin: 0px 10px;
+    margin: 0px 0.6rem;
 }
 .footer-end p{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .panel-options-arrow {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 5px;
-    padding: 10px;
+    margin: 0px 0.3rem;
+    padding: 0.6rem;
+}
+
+@media screen and (max-width: 690px) {
+    .footer-panel1{
+        overflow-y: auto;
+    }
+    .foot-panel3-item{
+        overflow-y: auto;
+    }
 }
